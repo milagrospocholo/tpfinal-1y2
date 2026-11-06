@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patitas con Ayuda - Rescate y Adopción Animal</title>
+  <!-- Vinculamos la hoja de estilos -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       ORGANISMO: Encabezado (.encabezado)
+       ========================================== -->
+  <header class="encabezado">
+    <div class="logo">
+      <img src="imagen/logo.png.png" alt="Logo de Patitas con Ayuda" class="logo__imagen">
+      <span class="logo__texto">Patitas con Ayuda</span>
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#adopciones">Adopciones</a></li>
+        <li><a href="#ayuda">Cómo ayudar</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contenedor principal que organizará el layout con CSS Grid -->
+  <main class="layout-principal">
+
+    <!-- ==========================================
+         ORGANISMO: Hero / Portada (.seccion-hero)
+         ========================================== -->
+    <section id="inicio" class="seccion-hero">
+      <h1 class="seccion-hero__titulo">Cambiá una vida, adoptá con amor</h1>
+      <p class="seccion-hero__texto">
+        Rescatamos, rehabilitamos y encontramos hogares responsables para perros y gatos en situación de vulnerabilidad.
+      </p>
+      <a href="#adopciones" class="boton boton--accion">Ver animales en adopción</a>
+    </section>
+
+    <!-- ==========================================
+         ORGANISMO: Catálogo de Adopciones (.seccion-adopciones)
+         ========================================== -->
+    <section id="adopciones" class="seccion-adopciones">
+      <h2 class="seccion-adopciones__titulo">Buscando un hogar</h2>
+      
+      <!-- Grilla de tarjetas de animales -->
+      <div class="grilla-adopciones">
+
+        <!-- MOLÉCULA: Tarjeta de animal 1 -->
+        <article class="tarjeta-animal">
+          <img src="imagen/perrito 1.jpg" alt="Foto de Milo" class="imagen-animal">
+          <div class="tarjeta-animal__contenido">
+            <h3 class="tarjeta-animal__nombre">Milo</h3>
+            <div class="tarjeta-animal__etiquetas">
+              <span class="etiqueta">Perro</span>
+              <span class="etiqueta">2 años</span>
+              <span class="etiqueta">Vacunado</span>
+            </div>
+            <p class="tarjeta-animal__descripcion">
+              <strong>Milo 🐾</strong> fue rescatado de una casa donde vivía atado, sin la libertad que todo animal merece. Hoy busca una familia que le dé mucho amor y un hogar para siempre.<br><br>
+              Es muy juguetón, cariñoso y sociable. ¡Le encanta compartir momentos y recibir mimos!
+            </p>
+            <a href="#modal-adopcion" class="boton boton--accion">Quiero adoptarlo</a>
+          </div>
+        </article>
+
+        <!-- MOLÉCULA: Tarjeta de animal 2 -->
+        <article class="tarjeta-animal">
+          <img src="imagen/gatito 3.jpg" alt="Foto de Luna" class="imagen-animal">
+          <div class="tarjeta-animal__contenido">
+            <h3 class="tarjeta-animal__nombre">Luna</h3>
+            <div class="tarjeta-animal__etiquetas">
+              <span class="etiqueta">Gata</span>
+              <span class="etiqueta">1 año</span>
+              <span class="etiqueta">Castrada</span>
+            </div>
+            <p class="tarjeta-animal__descripcion">
+              <strong>Luna 🐱</strong> fue encontrada solita en la calle, buscando un lugar seguro donde sentirse protegida. Hoy está esperando una familia que le dé todo el amor que merece y un hogar para siempre.<br><br>
+              Es una gatita dulce y especial que sueña con encontrar a alguien con quien compartir muchos mimos y ronroneos. ❤️
+            </p>
+            <a href="#modal-adopcion" class="boton boton--accion">Quiero adoptarla</a>
+          </div>
+        </article>
+
+        <!-- MOLÉCULA: Tarjeta de animal 3 -->
+        <article class="tarjeta-animal">
+          <img src="imagen/perrito 3.jpg" alt="Foto de Rocco" class="imagen-animal">
+          <div class="tarjeta-animal__contenido">
+            <h3 class="tarjeta-animal__nombre">Rocco</h3>
+            <div class="tarjeta-animal__etiquetas">
+              <span class="etiqueta">Perro</span>
+              <span class="etiqueta">4 años</span>
+              <span class="etiqueta">Tranquilo</span>
+            </div>
+            <p class="tarjeta-animal__descripcion">
+              <strong>Rocco 🐶</strong> está esperando una segunda oportunidad para encontrar una familia que lo quiera y lo cuide para siempre. Sueña con tener un hogar donde nunca le falten amor, juegos y compañía.<br><br>
+              ¡Ayudanos a encontrar su familia ideal! ❤️
+            </p>
+            <a href="#modal-adopcion" class="boton boton--accion">Quiero adoptarlo</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ORGANISMO: Formas de ayudar (.seccion-ayuda)
+         ========================================== -->
+    <section id="ayuda" class="seccion-ayuda">
+      <h2 class="seccion-ayuda__titulo">Otras formas de colaborar</h2>
+      
+      <div class="grilla-ayuda">
+        <div class="bloque-ayuda">
+          <h3>Hogar de Tránsito</h3>
+          <p>Brindá un techo temporal mientras rehabilitamos a un rescatado y le encontramos una familia definitiva.</p>
+        </div>
+
+        <div class="bloque-ayuda">
+          <h3>Donaciones</h3>
+          <p>Tu aporte económico o de alimento balanceado y medicamentos nos permite costear rescates y veterinarios.</p>
+        </div>
+
+        <div class="bloque-ayuda">
+          <h3>Voluntariado</h3>
+          <p>Sumate a nuestro equipo para traslados, paseos, difusión en redes y jornadas de adopción.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         MOLÉCULA / SECCIÓN: Formulario de Contacto General
+         ========================================== -->
+    <section id="contacto" class="seccion-contacto">
+      <h2 class="seccion-contacto__titulo">Ponete en contacto</h2>
+      <p class="seccion-contacto__subtitulo">Escribinos para iniciar una adopción, ofrecer tránsito o realizar una consulta.</p>
+
+      <form class="formulario-contacto">
+        <div class="campo-grupo">
+          <label for="nombre">Nombre completo:</label>
+          <input type="text" id="nombre" class="campo-texto" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="email">Correo electrónico:</label>
+          <input type="email" id="email" class="campo-texto" placeholder="tucorreo@ejemplo.com" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="mensaje">Mensaje o consulta:</label>
+          <textarea id="mensaje" class="campo-texto" rows="4" placeholder="Contanos en qué animal estás interesado o cómo te gustaría ayudar..." required></textarea>
+        </div>
+
+        <a href="#modal-exito" class="boton boton--accion" style="display: inline-block; text-align: center;">Enviar mensaje</a>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       CARTEL 1: FORMULARIO DE ADOPCIÓN
+       ========================================== -->
+  <aside id="modal-adopcion" class="modal-contenedor">
+    <div class="modal-caja">
+      <a href="#adopciones" class="modal-cerrar" aria-label="Cerrar ventana">&times;</a>
+      
+      <h3 class="modal-titulo">Solicitud de Adopción</h3>
+      <p class="modal-descripcion">Completá tus datos y nos pondremos en contacto para coordinar la entrevista de adopción.</p>
+
+      <form class="formulario-contacto">
+        <div class="campo-grupo">
+          <label for="adoptante-nombre">Tu nombre completo:</label>
+          <input type="text" id="adoptante-nombre" class="campo-texto" placeholder="Ej: María Pérez" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="adoptante-telefono">Teléfono / WhatsApp:</label>
+          <input type="tel" id="adoptante-telefono" class="campo-texto" placeholder="Ej: 11 2345-6789" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="adoptante-animal">¿A quién querés adoptar?</label>
+          <input type="text" id="adoptante-animal" class="campo-texto" placeholder="Milo, Luna o Rocco" required>
+        </div>
+
+        <div class="campo-grupo">
+          <label for="adoptante-vivienda">Tipo de vivienda (Casa, depto, patio cerrado):</label>
+          <input type="text" id="adoptante-vivienda" class="campo-texto" placeholder="Ej: Casa con patio cerrado" required>
+        </div>
+
+        <!-- Al hacer clic aquí, abre el cartel de confirmación -->
+        <a href="#modal-exito" class="boton boton--accion" style="display: block; text-align: center;">Enviar solicitud de adopción</a>
+      </form>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       CARTEL 2: CONFIRMACIÓN DE SOLICITUD ENVIADA
+       ========================================== -->
+  <aside id="modal-exito" class="modal-contenedor">
+    <div class="modal-caja modal-caja--exito">
+      <a href="#adopciones" class="modal-cerrar" aria-label="Cerrar ventana">&times;</a>
+      
+      <div class="modal-icono">🐾 ✨</div>
+      <h3 class="modal-titulo">¡Solicitud enviada con éxito!</h3>
+      <p class="modal-descripcion">
+        Muchas gracias por tu compromiso. Recibimos tu postulación y nos pondremos en contacto con vos a la brevedad para coordinar la adopción.
+      </p>
+
+      <a href="#adopciones" class="boton boton--accion" style="display: inline-block; margin-top: var(--espacio-sm);">Volver al inicio</a>
+    </div>
+  </aside>
+
+  <!-- ==========================================
+       ORGANISMO: Pie de página (.pie-pagina)
+       ========================================== -->
+  <footer class="pie-pagina">
+    <p>🐾 <strong>Patitas con Ayuda</strong> — Asociación civil sin fines de lucro.</p>
+    <p>Comprometidos con el bienestar y la adopción responsable de animales.</p>
+  </footer>
+
+</body>
+</html>
